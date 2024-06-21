@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
 import {
     Container,
-    SubmitButton,
-    Form, Boxinput, Painel, Painel2
+    Form, Boxinput, Painel
 
 } from "./styles"
 
 import { SiConvertio } from "react-icons/si";
 
-export default function Input() {
+export default function Input2() {
 
     const [letreiro, setLetreiro] = useState('');
     const [painel, setPainel] = useState('');
@@ -19,28 +18,26 @@ export default function Input() {
         let string = e.target.value
 
         setPainel('')
-        setResultado('')
 
-        if (e.target.value.length > 8) {
-            setPainel('É permittido apenas 8 dígitos!')
+        if (string[indice] != '0' && string[indice] != '1' && string[indice] != null) {
+            setPainel(
+                `Valor ${string[indice]} não permitido! Apenas 0 e 1!`
+            );
+        } else {
+            setLetreiro(string);
         }
-        else {
-            if (string[indice] != '0' && string[indice] != '1' && string[indice] != null) {
-                setPainel(
-                    `Valor ${string[indice]} não permitido! Apenas 0 e 1!`
-                );
-            } else {
-                setLetreiro(string);
-            }
 
-        }
+        let bin = parseInt(letreiro, 2)
+        let resultado = `Valor em Binário: ${bin}`
+        setResultado(resultado)
+
+
     }
 
     function converter(e) {
         e.preventDefault();
         let bin = parseInt(letreiro, 2)
-        let resultado = `O valor binário '${letreiro}' equivale a: ${bin} em decimal`
-        setResultado(resultado)
+        setResultado(bin)
 
     }
 
@@ -52,9 +49,8 @@ export default function Input() {
         <Container>
             <Form onSubmit={converter}>
                 <Painel>
-                    <p>{painel}</p>
+                    <p>{resultado}</p>
                 </Painel>
-
                 <Boxinput>
                     <input
                         type="text"
@@ -62,15 +58,7 @@ export default function Input() {
                         value={letreiro}
                         onChange={atualizarLetreiro}
                     />
-                    <SubmitButton>
-                        <SiConvertio size={30} />
-                    </SubmitButton>
                 </Boxinput>
-
-                <Painel2>
-                    <p>{resultado}</p>
-                </Painel2>
-
             </Form>
         </Container>
     )

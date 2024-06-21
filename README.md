@@ -1,47 +1,30 @@
-# Bin2Dec
+#Bin2Dec
 
-**Tier:** 1-Beginner
+**Nível:** 1-Iniciante
 
-Binary is the number system all digital computers are based on.
-Therefore it's important for developers to understand binary, or base 2,
-mathematics. The purpose of Bin2Dec is to provide practice and
-understanding of how binary calculations.
+Binário é o sistema numérico no qual todos os computadores digitais são baseados.
+Portanto é importante que os desenvolvedores entendam o binário, ou base 2,
+matemática. O objetivo do Bin2Dec é proporcionar prática e
+compreensão de como cálculos binários.
 
-Bin2Dec allows the user to enter strings of up to 8 binary digits, 0's
-and 1's, in any sequence and then displays its decimal equivalent.
+Bin2Dec permite ao usuário inserir strings de até 8 dígitos binários, 0's
+e 1, em qualquer sequência e, em seguida, exibe seu equivalente decimal.
 
-This challenge requires that the developer implementing it follow these
-constraints:
+Este desafio exige que o desenvolvedor que o implementa siga estas
+restrições:
 
--   Arrays may not be used to contain the binary digits entered by the user
--   Determining the decimal equivalent of a particular binary digit in the
-    sequence must be calculated using a single mathematical function, for
-    example the natural logarithm. It's up to you to figure out which function
-    to use.
+- Arrays não podem ser usados ​​para conter os dígitos binários inseridos pelo usuário
+- Determinar o equivalente decimal de um dígito binário específico no
+    sequência deve ser calculada usando uma única função matemática, para
+    por exemplo, o logaritmo natural. Cabe a você descobrir qual função
+    usar.
 
-## User Stories
+## Requisitos
 
--   [ ] User can enter up to 8 binary digits in one input field
--   [ ] User must be notified if anything other than a 0 or 1 was entered
--   [ ] User views the results in a single output field containing the decimal (base 10) equivalent of the binary number that was entered
+- [ok] O usuário pode inserir até 8 dígitos binários em um campo de entrada
+- [ok] O usuário deve ser notificado se algo diferente de 0 ou 1 for digitado
+- [ok] O usuário visualiza os resultados em um único campo de saída contendo o equivalente decimal (base 10) do número binário que foi inserido
 
-## Bonus features
+## Requisito Bônus
 
--   [ ] User can enter a variable number of binary digits
-
-## Useful links and resources
-
-[Binary number system](https://en.wikipedia.org/wiki/Binary_number)
-
-## Example projects
-
-Try not to view this until you've developed your own solution:
-
--   [Binary to decimal conversion program for beginners](https://www.youtube.com/watch?v=YMIALQE26KQ)
--   [Binary to Decimal converter using React](https://github.com/email2vimalraj/Bin2Dec)
--   [Binary to Decimal converter with plain html, js and css](https://grfreire.github.io/Bin2Dec/)
--   [Binary to Decimal converter using Flutter & Dart](https://github.com/israelss/AppIdeasCollection/tree/master/Tier1/Bin2Dec)
-    -   [Live preview built with Flutter for Web](https://bin2dec.web.app/#/)
--   [Binary to Decimal converter using React](https://github.com/geoffctn/Bin2Dec)
--   [Matrix-like Binary to Decimal converter using Angular](https://github.com/ZangiefWins/MatrixBin2Dec)
-    -   [Live preview on heroku](https://matrix-bin2dec.herokuapp.com/)
+- [ok] O usuário pode inserir um número variável de dígitos binários

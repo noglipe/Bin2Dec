@@ -22,17 +22,10 @@ box-sizing: border-box;
 
 export const Painel = styled.div`
 font-size: 30px;
-color: red;
-text-shadow: 1px 1px 2px #000;
-height:105px;
-
-`;
-
-export const Painel2 = styled.div`
-font-size: 30px;
 color: #00ee17;
 text-shadow: 1px 1px 2px #000;
 height:105px;
+flex-wrap:wrap;
 
 `;
 
@@ -50,16 +43,6 @@ input{
   font-size: 30px;
   text-align: center;
 }
-
-`;
-
-export const SubmitButton = styled.button`
-display: flex;
-align-items: center;
-justify-content: center;
-
-height: 58px;
-width: 58px;
 
 `;
 
